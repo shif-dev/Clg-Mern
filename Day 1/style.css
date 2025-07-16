@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+  border: 0.2rem solid yellow;
+}
+
+.card{
+    display: flex;
+   
+}
+.image > img{
+    height: 15rem;
+}
+.movie-title{
+    display: flex;
+    justify-content: center;
+}
+
+.para-container{
+    margin: 0 1rem;
+}
