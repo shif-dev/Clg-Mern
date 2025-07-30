@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;  /* for horizontal centering */
+  align-items: center;      /* for vertical centering */
+  min-height: 100vh;        /* take full viewport height */
+  margin: 0;
+}
+
+.form-container{
+    width: 200px;
+    display: flex;
+    
+   
+ 
+    padding: 2rem;
+    margin-top: 175px;
+    border: solid 3px ;
+    border-radius: 2rem;
+    background-color:lightskyblue;
+}
+.form-details{
+    display: flex;
+    
+    margin: 0;
+
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.form>label{
+    padding: 0.3rem;
+}
