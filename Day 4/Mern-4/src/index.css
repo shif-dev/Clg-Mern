@@ -5,6 +5,9 @@ body {
 .get{
   background-color: aqua;
 }
+.img2{
+  width: 300px;
+}
  nav {
       display: flex; 
       justify-content: space-between; 

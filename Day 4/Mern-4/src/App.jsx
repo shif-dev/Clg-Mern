@@ -27,18 +27,18 @@ function App() {
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis qui perferendis at possimus alias inventore sint numquam, doloribus iste veniam accusamus mollitia repellendus nobis ipsa quae esse ex sapiente exercitationem ad! Repudiandae sapiente sequi labore hic ipsam tempora fugiat quia distinctio illum aut soluta, excepturi amet expedita facere quae quod?</p>
     <button class="bot get">Get Started </button>
   </div>
-  <img src="toolm5.1.webp" />
+
  
 </div>
 
 <div class="cards">
   <div class="card black">
     <h2>Create Unique Digital Art</h2>
-    <img class="photo" src="toolm5.2.jpg"/>
+    <img class="photo img2" src="img2.jpeg"/>
   </div>
   <div class="card green">
     <h2>Professional tools for illustration design...</h2>
-     <img class="img" src="toolm5.3.webp"/>
+     <img class="img img2" src="img2.jpeg"/>
     <button class="small-btn">Instructions </button>
   </div>
 </div>
