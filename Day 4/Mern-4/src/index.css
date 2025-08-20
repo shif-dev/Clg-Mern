@@ -1,0 +1,113 @@
+body {
+  font-family:Arial; 
+  margin: 0;
+   }
+.get{
+  background-color: aqua;
+}
+ nav {
+      display: flex; 
+      justify-content: space-between; 
+      padding: 10px 50px;
+      }
+
+ nav a {
+      margin: 0 10px;
+      text-decoration: none; 
+      color: black;
+       }
+
+ h3{
+    margin-right: 50px;
+    }
+
+ .hero {
+      background: pink;
+      padding: 50px;
+      text-align: center; 
+       }
+ .red{
+       border-radius: 20px;
+       border-color: black;
+       border-width: 2px;
+       border-style: solid;
+      }
+
+ .hero button {
+       margin: 10px;
+       padding: 10px 20px;
+       border: none; border-radius: 20px; 
+       border-color: black;
+       border-width: 2px;
+       border-style: solid;
+       }
+
+ .about {
+       display: flex;
+       padding: 50px;
+       gap: 30px;
+        }
+
+  .bot {
+      border-radius: 20px; 
+      border-color: black;
+      border-width: 2px;
+      border-style: solid;
+  }    
+
+ .about img { 
+        max-width: 300px; 
+        border-radius: 10px;
+        }
+
+ .cards {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 20px;
+       padding: 50px; 
+  }
+
+ .card {
+   padding: 20px;
+   border-radius: 10px; 
+   color: white; 
+  }
+
+ .black {
+   background: black;
+   height: 310px;
+   width: 300px;
+   margin-left: 150px;
+   margin-left: 360px;
+  display:inline-block;
+  border-radius: 10px;
+  }
+
+  .photo{
+       border-radius: 20px;
+  }
+  
+ .green {
+   background:yellow; 
+   color: black;
+   height: 310px;
+   width: 350px;
+  
+  border-radius: 10px;
+
+  }
+  .img{
+       width: 350px;
+       height: 200px;
+       border-radius: 20px;
+  }
+  .card{
+       position: relative;
+  }
+.card button{
+    margin-top: 1px;
+    float: right;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+}
