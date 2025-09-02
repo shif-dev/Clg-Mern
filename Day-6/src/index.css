@@ -1,68 +1,149 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+    background: #d78e7a;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   }
-  a:hover {
-    color: #747bff;
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  button {
-    background-color: #f9f9f9;
+  
+  .card-container {
+    background: #fff7e6;
+    border-radius: 25px;
+    display: flex;
+    padding: 48px 42px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+    max-width: 800px;
+    margin: 64px auto;
+    gap: 54px;
+    position: relative;
   }
-}
+  
+  .card {
+    background: #716f6f;
+    border-radius: 18px;
+    padding: 32px 24px 18px 24px;
+    box-shadow: 6px 8px 20px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 260px;
+    position: relative;
+  }
+  
+  .top img {
+    width: 170px;
+    height: 142px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    margin-bottom: 20px;
+  }
+  
+  /* Thumbnails (bottom of left card, and small color selector images) */
+  .card-inside {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  
+  .card-inside .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.04);
+    min-width: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-inside .card img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* Right Side */
+  .right-card {
+    display: flex;
+    flex: 1 1 340px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    min-width: 320px;
+  }
+  
+  .components .title h3 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    font-size: 1.70rem;
+    margin: 0;
+    color: #121212;
+  }
+  
+  .components .title .light-grey-shade {
+    color: #706c67;
+    font-size: 0.99rem;
+    margin-left: 4px;
+  }
+  
+  .cost {
+    margin: 17px 0 11px 0;
+    font-size: 1.15rem;
+    color: #a71d31;
+    font-weight: 600;
+  }
+  .cost span {
+    color: #a71d31;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .components .light-grey-shade {
+    color: #706c67;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 15px 0 8px 0;
+    display: block;
+  }
+  
+  ul {
+    margin-top: 12px;
+    padding-left: 20px;
+  }
+  
+  ul li p,
+  ul li {
+    color: #1b181a;
+    font-size: 1.01rem;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+    letter-spacing: 0.01em;
+  }
+  
+  @media (max-width: 900px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 28px 8px;
+      gap: 32px;
+      max-width: 98vw;
+    }
+    .card,
+    .right-card {
+      min-width: 260px;
+      width: 100%;
+    }
+  }
+  
