@@ -5,9 +5,163 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <style>
+      body {
+    background: #d78e7a;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-container {
+    background: #fff7e6;
+    border-radius: 25px;
+    display: flex;
+    padding: 48px 42px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+    max-width: 800px;
+    margin: 64px auto;
+    gap: 54px;
+    position: relative;
+  }
+  
+  .card {
+    background: #716f6f;
+    border-radius: 18px;
+    padding: 60px 24px 100px 24px;
+    box-shadow: 6px 8px 20px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 260px;
+    position:relative;
+    
+    
+  }
+  
+  
+  .top img {
+    width: 170px;
+    height: 142px;
+    object-fit: cover;
+    
+    
+    
+  }
+  
+  /* Thumbnails (bottom of left card, and small color selector images) */
+  .card-inside {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  
+  .card-inside .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.04);
+    min-width: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-inside .card img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* Right Side */
+  .right-card {
+    display: flex;
+    flex: 1 1 340px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    min-width: 320px;
+  }
+  
+  .components .title h3 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    font-size: 1.70rem;
+    margin: 0;
+    color: #121212;
+  }
+  
+  .components .title .light-grey-shade {
+    color: #706c67;
+    font-size: 0.99rem;
+    margin-left: 4px;
+  }
+  
+  .cost {
+    margin: 17px 0 11px 0;
+    font-size: 1.15rem;
+    color: #a71d31;
+    font-weight: 600;
+  }
+  .cost span {
+    color: #a71d31;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .components .light-grey-shade {
+    color: #706c67;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 15px 0 8px 0;
+    display: block;
+  }
+  
+  ul {
+    margin-top: 12px;
+    padding-left: 20px;
+  }
+  
+  ul li p,
+  ul li {
+    color: #1b181a;
+    font-size: 1.01rem;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+    letter-spacing: 0.01em;
+  }
+  
+  @media (max-width: 900px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 28px 8px;
+      gap: 32px;
+      max-width: 98vw;
+    }
+    .card,
+    .right-card {
+      min-width: 260px;
+      width: 100%;
+    }
+  }
+  
+    </style>
   </head>
   <body>
-    <div id="root">cool</div>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
